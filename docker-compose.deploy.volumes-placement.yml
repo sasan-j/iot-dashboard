@@ -7,11 +7,5 @@ services:
       placement:
         constraints:
           - node.labels.${STACK_NAME}.app-db-data == true
-  proxy:
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
-
 volumes:
   app-db-data:

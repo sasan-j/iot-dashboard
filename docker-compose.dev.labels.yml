@@ -1,10 +1,5 @@
 version: '3.3'
 services:
-  proxy:
-    labels:
-      - traefik.frontend.rule=Host:${DOMAIN}
-      - traefik.enable=true
-      - traefik.port=80
   backend:
     labels:
       - traefik.frontend.rule=PathPrefix:/api,/docs,/redoc

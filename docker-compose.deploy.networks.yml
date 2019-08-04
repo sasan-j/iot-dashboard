@@ -4,10 +4,6 @@ services:
     networks:
       - ${TRAEFIK_PUBLIC_NETWORK}
       - default
-  proxy:
-    networks:
-      - ${TRAEFIK_PUBLIC_NETWORK}
-      - default
   flower:
     networks:
       - ${TRAEFIK_PUBLIC_NETWORK}
